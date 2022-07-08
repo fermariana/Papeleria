@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity4">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.V2lf.AppBarOverlay">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <include layout="@layout/content_main2" />
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_anchor="@+id/editTextTextPersonName2"
+        app:layout_anchorGravity="end|center"
+        app:popupTheme="@style/Theme.V2lf.PopupOverlay" />
+
+    <EditText
+        android:id="@+id/editNomP"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Nombre del producto"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:background="#2B2B2B"
+        android:rotationX="4"
+        android:text="Registro de productos"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editPr"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editDescripcion"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descripción"
+        android:inputType="textMultiLine" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="269dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="550dp"
+        android:text="Insertar imagen" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="600dp"
+        android:text="Ingresar producto" />
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="270dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Codigo" />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
